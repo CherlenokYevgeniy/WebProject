@@ -1,0 +1,4 @@
+Week 3
+On this week we started to make a map with all the points and addresses of stores.
+Also we finished our main page.
+And they we started to work on transitions and links of the site.
