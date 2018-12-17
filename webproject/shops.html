@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8"> 
+	<title>Pinta</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="shops.css">
+	
+	<script type="text/javascript" src="shops.js" defer></script>
+
+</head>
+<body>
+	<header>
+         <div class="logo"><img src="assets/black_logo.png" ></div>
+         <div class="nav">
+            <ul>
+               <li><a href="main.html">ГЛАВНАЯ</a></li>
+               <li><a href="">ПРОДУКЦИЯ</a></li>
+               <li><a href="shops.html">МАГАЗИНЫ</a></li>
+               <li><a href="">КОНТАКТЫ</a></li>
+            </ul>
+          </div>
+          <div class="header-title">
+            <p>Сеть пивных магазинов "Пинта"</p>
+          </div>
+      </header>
+      <section class="shops-container ">
+	<div class="shops-item">
+		<h1>Город</h1>
+		<a href="">Ул.Терешковой,32</a>
+		<a href="">Пр.Бухар-Жырау,66</a>
+		<a href="">Ул.Бульвар-Мира,17</a>
+		<a href="">Ул.Гончарная,56а</a>
+		<a href="">Ул.Высоковольтная,128</a>
+		<a href="">Пр.Нуркена Абдирова,19</a>
+	</div>
+	<div class="shops-item">
+		<h1>Михайловка</h1>
+		<a href="">Ул.Кривогуза 23</a>
+		
+	</div>
+	<div class="shops-item">
+		<h1>Майкудук</h1>
+		<a href="">Мкрн.Восток 1,дом 3</a>
+		<a href="">Мкрн.17,47/23</a>
+		
+	</div>
+	<div class="shops-item">
+		<h1>Юго-восток</h1>
+		<a href="">Мкрн.Степной 3,дом 3</a>
+		<a href="">Мкрн.Степной 2,дом 10</a>
+		<a href="">Ул.Сатыбалдина,18/3</a>
+		<a href="">Ул.Язева,17</a>
+	</div>
+	<div class="shops-item">
+		<h1>Пришахтинск</h1>
+		<a href="">Мкрн.23,дом 8</a>
+		
+	</div>
+</section>
+	<div id="googleMap" style="width: 100%;height: 400px;"></div>
+
+<script>
+function myMap() {
+	var marker = new google.maps.Marker({
+ 	 	position:new google.maps.LatLng(49.820326, 73.110946),
+  		icon:'assets/img/marker-red.png'
+});
+	var marker1 = new google.maps.Marker({
+ 	 	position:new google.maps.LatLng(49.79844, 73.12068),
+  		icon:'assets/img/marker-red.png'
+});
+	var marker2 = new google.maps.Marker({
+ 	 	position:new google.maps.LatLng(49.804957, 73.101058),
+  		icon:'assets/img/marker-red.png'
+});
+	var marker3 = new google.maps.Marker({
+ 	 	position:new google.maps.LatLng(49.789517, 73.149300),
+  		icon:'assets/img/marker-red.png'
+});
+	var marker4 = new google.maps.Marker({
+ 	 	position:new google.maps.LatLng(49.814282, 73.091940),
+  		icon:'assets/img/marker-red.png'
+});
+	var marker5 = new google.maps.Marker({
+ 	 	position:new google.maps.LatLng(49.774250, 73.132809),
+  		icon:'assets/img/marker-red.png'
+});
+	var marker6 = new google.maps.Marker({
+ 	 	position:new google.maps.LatLng(49.852787, 73.188707),
+  		icon:'assets/img/marker-red.png'
+});
+	var marker7 = new google.maps.Marker({
+ 	 	position:new google.maps.LatLng(49.781992, 73.149399),
+  		icon:'assets/img/marker-red.png'
+});
+	var marker8 = new google.maps.Marker({
+ 	 	position:new google.maps.LatLng(49.912990, 73.078222),
+  		icon:'assets/img/marker-red.png'
+});
+	var marker9 = new google.maps.Marker({
+ 	 	position:new google.maps.LatLng(49.777570, 73.141863),
+  		icon:'assets/img/marker-red.png'
+});
+	var marker10 = new google.maps.Marker({
+ 	 	position:new google.maps.LatLng( 49.783903, 73.113758),
+  		icon:'assets/img/marker-red.png'
+});
+	var marker11 = new google.maps.Marker({
+ 	 	position:new google.maps.LatLng( 49.806667, 73.068571),
+  		icon:'assets/img/marker-red.png'
+});
+	var marker12 = new google.maps.Marker({
+ 	 	position:new google.maps.LatLng( 49.800987, 73.089531),
+  		icon:'assets/img/marker-red.png'
+});
+	var marker13 = new google.maps.Marker({
+ 	 	position:new google.maps.LatLng( 49.889568, 73.200154),
+  		icon:'assets/img/marker-red.png'
+});
+var mapProp= {
+  center:new google.maps.LatLng(49.8266448,72.9900828),
+  zoom:11.09,
+};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+marker.setMap(map);
+marker1.setMap(map);
+marker2.setMap(map);
+marker3.setMap(map);
+marker4.setMap(map);
+marker5.setMap(map);
+marker6.setMap(map);
+marker7.setMap(map);
+marker8.setMap(map);
+marker9.setMap(map);
+marker10.setMap(map);
+marker11.setMap(map);
+marker12.setMap(map);
+marker13.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAn5E3yhy5c3SobRgHY9CNOT8Cq-6Nqr3o&callback=myMap"></script>
+
+ <footer>
+         <div class="logo">
+          <div class="logo-left">
+           <a href="https://www.instagram.com/pinta_krg/" target="_blank"><img src="assets/instagram.png" ></a>
+           </div>
+           <div class="logo-rigth">
+           <a class="" href="#" title="Наверх"><img src="assets/arrow.png" ></a>
+           </div>
+         </div>
+         <div class="footer-content">
+          <p></p>
+         </div>
+        
+      </footer>
+</body>
+</html>
