@@ -1,13 +1,10 @@
-/*RESPONSIVE WEBSITE STUFF*/
 *{
 margin: 0;
 box-sizing: border-box;
 padding: 0;
 list-style-type:none;
 }
-
 /*HEADER SECTION START*/
-
 header .logo  {
 float: left;
 width: 150px;
@@ -18,13 +15,14 @@ header .logo img{
 height: 96%;
 margin-left: 30px;
 }
-
 .clearf:before,
 .clearf:after {
 content: " ";
 display: table;
 }
-.clearf:after {clear: both;}
+.clearf:after {
+clear: both;
+}
 header {
 height: 60px;
 width:100%;
@@ -41,14 +39,15 @@ border-right: 1px solid #252525;
 header li a:hover{
 color: #fde624;
 }
-
-.navb li {float: left;}
+.navb li {
+float: left;
+}
 .navb li a,
 #touch-menu {
 width: 150px;
 display: block;
 height: 60px;
-padding: 25px 7px;
+padding: 20px 7px;
 font-weight: bold;
 font-size: 14px;
 color: #fff;
@@ -57,9 +56,16 @@ text-align: center;
 text-transform: uppercase;
 letter-spacing: 1px;
 }
+#touch-menu img{
+padding-top: 5px;
+}
 .navb li a:hover,
-#touch-menu:hover {color: #fde624;}
-#touch-menu {display: none;}
+#touch-menu:hover {
+color: #fde624;
+}
+#touch-menu {
+display: none;
+}
 @media (max-width: 768px) {
 header {
 position: fixed;
@@ -81,14 +87,18 @@ left: 0;
 right: 0;
 display: none;
 }
-.navb li {float: none;}
+.navb li {
+float: none;
+}
 .navb li a {
 color: black;
 border-top: 1px solid #eee;
 border-left: 3px solid transparent;
 background: #fff;
 }
-.navb li:first-child a {border-top: none;}
+.navb li:first-child a {
+border-top: none;
+}
 .navb li a:hover {
 color: black;
 border-left: 5px solid black;
@@ -96,8 +106,19 @@ background: #fde624;
 }
 }
 /*HEADER SECTION END*/
-
-
+/*SLIDER SECTION START*/
+.mini{
+display: none;
+}
+@media(max-width: 768px){
+.main{
+display: none;
+}
+.mini{
+display: block;
+}
+}
+/*SLIDER SECTION END*/
 /*INFORMATION SECTION START*/
 .information{
 background-image: url(assets/img/big_information.png);
@@ -112,8 +133,14 @@ text-align: center;
 background-color: rgba(10,10,10,0.6) !important;
 }
 .text_info{
-margin-top:5%;
+color: white !important;
+margin:10%;
 text-align: center;
+}
+@media(max-width: 768px){
+.text_info{
+margin: 5%;	
+}
 }
 .information a {
 text-decoration: none;
@@ -140,13 +167,17 @@ margin: auto;
 border: 2px solid rgba(0,0,0,0);
 transition: .4s;
 }
+.information .btn a:hover{
+outline: none;
+text-decoration: none;
+color: 	#fde624;
+}
 .information .btn a:hover:after {
 border-color: #f1c40f;
 width: calc(100% - 20px);
 height: calc(100% + 20px);
 }
 /*INFORMATION SECTION END*/
-
 /*DISCONT SECTION START*/
 .discont {
 background-image:url(assets/img/background.jpg);
@@ -154,30 +185,23 @@ background-repeat: no-repeat, repeat-x;
 width: 100%;
 height: 100%;
 }
-.info-left{
+.discont-left{
 height: 350px;
-width: 35%;
-flex: 1;
+padding-top: 30px;
 font-size: 17px;
 color: white;
 margin-left: 0;
-padding-top: 45px;
 text-align: center;
 background-color: rgba(10,10,10,0.6) !important;
 }
-.info-left{
-flex: 1;
+.discont-rigth{
+display: flex;
+align-items: center;
+justify-content: center;
 }
-.discont-left{
-font-size: 17px;
-color: white;
-}
-.info-rigth{
-padding-left: 50px !important;
-padding-top: 50px !important;
-}
-.card {
-
+.discont-rigth img{
+width: 80%;
+height: 80%;
 }
 /*DISCONT SECTION END*/
 /*FOOTER SECTION START*/
@@ -185,8 +209,7 @@ footer {
 height:60px;
 width:100%;
 background: black;
-text-align: center;
-
+font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 }
 footer .logo {
 float: right;
@@ -199,32 +222,39 @@ display: flex;
 flex-direction: row;
 justify-content: center;
 }
-
 .footer-content{
+height: 60px;
+display: flex;
+flex-direction: column;
 font-size: 14px;
 color: white;
-position: relative;
-	
+justify-content: center;
+align-items: center; 	
+}
+.footer-content p{
+height: 14px;
 }
 footer .logo-left{
 margin: 5%;
 }
 footer .logo-rigth{
-	padding-top: 3px;
-	margin: 5%;
+padding-top: 3px;
+margin: 5%;
 }
 .gmail{
-	padding-top: 10px;
-
-	color: white;
-	text-decoration: none;
+padding-top: 10px;
+color: white;
+text-decoration: none;
 }
 .gmail:hover{
-	color: #fde624;
+color: #fde624;
 }
 @media (max-width: 768px) {
-	footer{
-		text-align: left;
-	}
+.footer-content{
+float: left;
+font-size: 12px;
+padding-top: 10px;
+padding-left: 15px;
+}
 }
 /*FOOTER SECTION END*/
