@@ -1,0 +1,261 @@
+*{
+margin: 0;
+box-sizing: border-box;
+padding: 0;
+list-style-type:none;
+}
+/*HEADER SECTION START*/
+header .logo  {
+float: left;
+width: 150px;
+height: 60px;
+background:#fde624 ;
+}
+header .logo img{
+height: 96%;
+margin-left: 30px;
+}
+.clearf:before,
+.clearf:after {
+content: " ";
+display: table;
+}
+.clearf:after {
+clear: both;
+}
+header {
+height: 60px;
+width:100%;
+position: fixed;
+background: #3e4156;
+background: black;
+z-index:120;
+}
+header li {
+float: left;
+list-style-type:none;
+border-right: 1px solid #252525;
+}
+header li a:hover{
+color: #fde624;
+}
+.navb li {
+float: left;
+}
+.navb li a,
+#touch-menu {
+width: 150px;
+display: block;
+height: 60px;
+padding: 20px 7px;
+font-weight: bold;
+font-size: 14px;
+color: #fff;
+text-decoration: none;
+text-align: center;
+text-transform: uppercase;
+letter-spacing: 1px;
+}
+#touch-menu img{
+padding-top: 5px;
+}
+.navb li a:hover,
+#touch-menu:hover {
+color: #fde624;
+}
+#touch-menu {
+display: none;
+}
+@media (max-width: 768px) {
+header {
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+height: 60px;
+}
+#touch-menu {
+display: block;
+float: right;
+height: 60px;
+margin: -17px -47px;
+}
+.navb {
+position: absolute;
+top: 100%;
+left: 0;
+right: 0;
+display: none;
+}
+.navb li {
+float: none;
+}
+.navb li a {
+color: black;
+border-top: 1px solid #eee;
+border-left: 3px solid transparent;
+background: #fff;
+}
+.navb li:first-child a {
+border-top: none;
+}
+.navb li a:hover {
+color: black;
+border-left: 5px solid black;
+background: #fde624;
+}
+}
+/*HEADER SECTION END*/
+/*SLIDER SECTION START*/
+.mini{
+display: none;
+}
+@media(max-width: 768px){
+.main{
+display: none;
+}
+.mini{
+display: block;
+}
+}
+/*SLIDER SECTION END*/
+/*INFORMATION SECTION START*/
+.information{
+background-image: url(assets/img/big_information.png);
+height: 100%;
+width: 100%;
+}
+.information-left{
+	padding-top: 20px;
+font-size: 17px;
+height: 350px;
+color: white;
+text-align: center;
+background-color: rgba(10,10,10,0.6) !important;
+}
+.text_info{
+color: white !important;
+margin:10%;
+text-align: center;
+}
+@media(max-width: 768px){
+.text_info{
+margin: 5%;	
+}
+}
+.information a {
+text-decoration: none;
+outline: none;
+display: inline-block;
+margin: 10px 20px;
+padding: 10px 30px;
+position: relative;
+border: 2px solid #f1c40f;
+color: #f1c40f;
+font-family: 'Montserrat', sans-serif; 
+transition: .4s;
+}
+.information a:after {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+width: 100%;
+height: 100%;
+margin: auto;
+border: 2px solid rgba(0,0,0,0);
+transition: .4s;
+}
+.information .btn a:hover{
+outline: none;
+text-decoration: none;
+color: 	#fde624;
+}
+.information .btn a:hover:after {
+border-color: #f1c40f;
+width: calc(100% - 20px);
+height: calc(100% + 20px);
+}
+/*INFORMATION SECTION END*/
+/*DISCONT SECTION START*/
+.discont {
+background-image:url(assets/img/background.jpg);
+background-repeat: no-repeat, repeat-x;
+width: 100%;
+height: 100%;
+}
+.discont-left{
+height: 350px;
+padding-top: 30px;
+font-size: 17px;
+color: white;
+margin-left: 0;
+text-align: center;
+background-color: rgba(10,10,10,0.6) !important;
+}
+.discont-rigth{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.discont-rigth img{
+width: 80%;
+height: 80%;
+}
+/*DISCONT SECTION END*/
+/*FOOTER SECTION START*/
+footer {
+height:60px;
+width:100%;
+background: black;
+font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+footer .logo {
+float: right;
+position: absolute;
+right: 0;
+width: 150px;
+height: 60px;
+background:#fde624;
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+.footer-content{
+height: 60px;
+display: flex;
+flex-direction: column;
+font-size: 14px;
+color: white;
+justify-content: center;
+align-items: center; 	
+}
+.footer-content p{
+height: 9px;
+}
+footer .logo-left{
+margin: 5%;
+}
+footer .logo-rigth{
+padding-top: 3px;
+margin: 5%;
+}
+.gmail{
+padding-top: 10px;
+color: white;
+text-decoration: none;
+}
+.gmail:hover{
+color: #fde624;
+}
+@media (max-width: 768px) {
+.footer-content{
+float: left;
+font-size: 11px;
+padding-top: 10px;
+padding-left: 15px;
+}
+}
+/*FOOTER SECTION END*/

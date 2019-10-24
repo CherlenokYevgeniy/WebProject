@@ -1,6 +1,0 @@
-Week 5
-On this week we faced with some difficulties in terms of website adaptation, because of we redid a whole product page.
-We slightly corrected our design and removed the extra components of the site that the customer did not like.
-We spent about a day learning php for a separate message sending window.
-But in the end customer told to remove this part of the site.
-Now we are at the finish line to complete the site.

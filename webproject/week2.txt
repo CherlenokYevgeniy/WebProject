@@ -1,4 +1,0 @@
-Week 2
-On this week we finally discussed parts of the site with the customer.
-We started our work from the header.
-After we made a slider from the stock store stock without using bootstrap with own made images in AdobePhotoshop.

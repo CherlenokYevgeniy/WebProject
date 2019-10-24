@@ -1,5 +1,0 @@
-Week 4
-On this week we are working on a link to all bar products, price tags and product descriptions.
-We also added to our main page a small paragraph which our customer dropped us about the company. 
-Our main work on the layout of the site is nearing its end.
-After the end of the layout we will start working on the adaptability of the site and its place in the search trends.

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Pinta</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link rel="stylesheet" type="text/css" href="main.css">
+      <link rel="stylesheet" href="assets/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript" ></script>
+      <script type="text/javascript">
+         $(document).ready(function(){
+           var touch = $('#touch-menu');
+             var menu = $('.navb');
+          
+             $(touch).on('click', function(e) {
+                 e.preventDefault();
+                 menu.slideToggle();
+             });
+             $(window).resize(function(){
+                 var wid = $(window).width();
+                 if(wid > 760 && menu.is(':hidden')) {
+                     menu.removeAttr('style');
+                 }
+             });
+             
+         });
+      </script>
+   </head>
+   <body>
+      <header class="clearf">
+         <div class="logo"><a href="index.html"><img src="assets/img/black_logo.png" ></a></div>
+         <a href="#" title="Меню" id="touch-menu"><img src="assets/img/lines.png" ></a>
+         <nav>
+            <ul class="navb clearf">
+               <li><a href="products.html">ПРОДУКЦИЯ</a></li>
+               <li><a href="shops.html">МАГАЗИНЫ</a></li>
+            </ul>
+         </nav>
+      </header>
+      <section class="slider main">
+         <img class="mySlides"style="width: 100%;height: 350px;" src="assets/img/slider1.png">
+         <img class="mySlides"style="width: 100%;height: 350px;" src="assets/img/slider2.png">
+      </section>
+      <section class="slider mini">
+         <img class="mySlides-mini"style="width: 100%;height: 350px;" src="assets/img/slider1-2.png">
+         <img class="mySlides-mini"style="width: 100%;height: 350px;" src="assets/img/slider2-3.png">
+      </section>
+      <section class="information">
+         <div class="container d-flex flex-row">
+            <div class="row">
+               <div class="information-left col-lg-6">
+                  <div class="text_info">
+                     <div>
+                        <h3> О Компании</h3>
+                     </div>
+                     <div>
+                        <p>Сеть пивных магазинов "ПИНТА" предлагает более 50 оттенков яркости и терпкости в богатом ассортименте разливных напитков. Живое пиво. Без консервантов. Завидный выбор закусок на любой язык.</p>
+                     </div>
+                     <div class="btn">
+                        <a href="products.html">Продукция</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="discont">
+         <div class="container d-flex flex-row">
+            <div class="row">
+               <div class="discont-left col-lg-6">
+                  <div class="text_info">
+                     <div>
+                        <h3>Условия получения дисконта</h3>
+                     </div>
+                     <div>
+                        <p>
+                           Для получения дисконта необходимо совершить покупку на сумму 4000 тенге. Начальная скидка состовляет 3%, далее повышается на 1% за каждые 50тыс.. Максимальная скидка- 7%.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="discont-rigth col-lg-6"><img src="assets/img/card.png" >
+               </div>
+            </div>
+         </div>
+      </section>
+      <footer>
+         <div class="logo">
+            <div class="logo-left">
+               <a href="https://www.instagram.com/pinta_krg/" target="_blank"><img src="assets/img/instagram.png" ></a>
+            </div>
+            <div class="logo-rigth">
+               <a href="#" title="Наверх"><img src="assets/img/arrow.png" ></a>
+            </div>
+         </div>
+         <div class="footer-content">
+            <div  >
+               <p><a href="mailto:zolotaya-melnica@mail.ru" class="gmail">Связаться с нами</a></p>
+            </div>
+            <div>
+               <p>Номер доставки: 87755532508</p>
+            </div>
+         </div>
+      </footer>
+      <script>
+         var slideIndex = 0;
+         carousel();
+         function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none"; 
+            }
+            slideIndex++;
+            if (slideIndex > x.length) {slideIndex = 1} 
+            x[slideIndex-1].style.display = "block"; 
+            setTimeout(carousel, 4500); 
+            }
+      </script>
+      <script>
+         var slideIndexMini = 0;
+         carouselMini();
+         function carouselMini() {
+            var j;
+            var y = document.getElementsByClassName("mySlides-mini");
+            for (j = 0; j < y.length; j++) {
+              y[j].style.display = "none"; 
+            }
+            slideIndexMini++;
+            if (slideIndexMini > y.length) {slideIndexMini = 1} 
+            y[slideIndexMini-1].style.display = "block"; 
+            setTimeout(carouselMini, 4500); 
+            }
+      </script>
+   </body>
+</html>
